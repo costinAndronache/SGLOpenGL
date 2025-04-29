@@ -1,17 +1,21 @@
-# SwiftGL OpenGL
+# SGLOpenGL
+
+
+## IMPORTANT: 
+This is a fork of David Turnbull's https://github.com/SwiftGL/OpenGL.git in which I added `Windows` support
 
 To use, include dependency in your `Package.swift`:
 ```swift
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/SwiftGL/OpenGL.git", majorVersion: 3)
+        .package(url: "https://github.com/costinAndronache/SGLOpenGL.git", from: "3.1.0")
     ]
 )
 ```
 Then `import SGLOpenGL` in your swift file.
 
 
-## Getting Started
+## Getting Started (contd from SwiftGL/OpenGL)
 
 You can't use OpenGL until you can call its functions. The SwiftGL OpenGL loader
 imports all the functions up to OpenGL 4.5. Platform differences are abstracted
